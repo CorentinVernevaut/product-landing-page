@@ -95,6 +95,23 @@ h2 {
     align-items: center;
 }
 
+#card-title-basic {
+    background-color: #A32EFF;
+}
+
+#card-title-advanced {
+    background-color: #7500D1;
+}
+
+#card-title-optimal {
+    background-color: #420075;
+}
+
+.card-item-list {
+    list-style: none;
+    padding: 0;
+}
+
 #video {
     padding: 5% 0 10% 0;
     width: 500px;
