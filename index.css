@@ -84,32 +84,91 @@ h2 {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px;
+    grid-template-rows: 1fr;
     grid-gap: 0 10%;
 }
 
 .comparative-card {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.23), -1px 0 20px rgba(0, 0, 0, 0.23), 0 10px 20px rgba(0, 0, 0, 0.23);
+}
+
+.card-title {
+    width: 100%;
+    text-align: center;
+    color: white;
 }
 
 #card-title-basic {
-    background-color: #A32EFF;
+    background: linear-gradient(90deg, #A32EFF, #7500D1);
 }
 
 #card-title-advanced {
-    background-color: #7500D1;
+    background: linear-gradient(90deg, #7500D1, #5C00A3);
 }
 
 #card-title-optimal {
-    background-color: #420075;
+    background: linear-gradient(90deg, #5C00A3, #420075);
+}
+
+.card-body {
+    width: 100%;
+    flex-grow: 1;
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .card-item-list {
-    list-style: none;
+    font-size: 18px;
     padding: 0;
+    list-style: none;
+}
+
+.card-item-list li {
+    margin-bottom: 1em;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 40px;
+    gap: 20px;
+}
+
+.buy-now-link {
+    width: auto;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    background-color: #A32EFF;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+    transition: 0.5s;
+}
+
+.buy-now-link:hover {
+    background-color: #601c94;
+}
+
+.learn-more-link {
+    width: auto;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #A32EFF;
+    border: 2px solid #A32EFF;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+    transition: 0.5s;
+}
+
+.learn-more-link:hover {
+    border-color: #601c94;
+    color: #601c94;
 }
 
 #video {
@@ -135,6 +194,18 @@ h2 {
 
     h2 {
         text-align: center;
+    }
+
+    #comparative {
+        padding-bottom: 10em;
+    }
+
+    #comparative-list-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-gap: 5% 0;
     }
 
     #video {
