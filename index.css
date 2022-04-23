@@ -252,6 +252,20 @@ h2 {
     }
 
     #video {
+        width: 400px;
+        height: 200px;
+        padding: 5% 10% 10% 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .description-img {
+        width: 150px;
+        height: 120px;
+    }
+
+    #video {
         width: 300px;
         height: 150px;
         padding: 5% 10% 10% 10%;
