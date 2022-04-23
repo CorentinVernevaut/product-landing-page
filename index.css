@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     height: 50px;
-    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.19);
 }
 
 #header::before, #header::after {
@@ -171,10 +171,48 @@ h2 {
     color: #601c94;
 }
 
+#freeTrial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
 #video {
-    padding: 5% 0 10% 0;
+    padding: 5% 0 5% 0;
     width: 500px;
     height: 300px;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#email {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: lightgray;
+    width: 30%;
+}
+
+#submit {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #A32EFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #601c94;
 }
 
 @media screen and (max-width: 1200px) {
