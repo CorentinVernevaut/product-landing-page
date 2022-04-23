@@ -4,19 +4,24 @@ body {
 
 #header {
     width: 100%;
-    background-color: white;
+    background: #6C63FF;
+    color: white;
     position: fixed;
     top: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     height: 50px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 10px rgba(108, 99, 255, 0.5);
 }
 
 #header::before, #header::after {
     content: '';
     width: 5em;
+}
+
+#header-img {
+    height: 50px;
 }
 
 #nav-bar {
@@ -28,7 +33,7 @@ body {
 .nav-link {
     margin: 0 1em 0 1em;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #description {
@@ -102,15 +107,15 @@ h2 {
 }
 
 #card-title-basic {
-    background: linear-gradient(90deg, #A32EFF, #7500D1);
+    background: linear-gradient(90deg, #6C63FF, #564FCC);
 }
 
 #card-title-advanced {
-    background: linear-gradient(90deg, #7500D1, #5C00A3);
+    background: linear-gradient(90deg, #564FCC, #4640A6);
 }
 
 #card-title-optimal {
-    background: linear-gradient(90deg, #5C00A3, #420075);
+    background: linear-gradient(90deg, #4640A6, #3A358A);
 }
 
 .card-body {
@@ -144,14 +149,14 @@ h2 {
     font-size: 25px;
     font-weight: 500;
     color: white;
-    background-color: #A32EFF;
+    background-color: #6C63FF;
     border-radius: 5px;
     padding: 10px 0 10px 0;
     transition: 0.5s;
 }
 
 .buy-now-link:hover {
-    background-color: #601c94;
+    background-color: #4640A6;
 }
 
 .learn-more-link {
@@ -159,16 +164,16 @@ h2 {
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
-    color: #A32EFF;
-    border: 2px solid #A32EFF;
+    color: #6C63FF;
+    border: 2px solid #6C63FF;
     border-radius: 5px;
     padding: 10px 0 10px 0;
     transition: 0.5s;
 }
 
 .learn-more-link:hover {
-    border-color: #601c94;
-    color: #601c94;
+    border-color: #4640A6;
+    color: #4640A6;
 }
 
 #freeTrial {
@@ -203,7 +208,7 @@ h2 {
     font-size: 16px;
     font-weight: 500;
     color: white;
-    background-color: #A32EFF;
+    background-color: #6C63FF;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -212,7 +217,7 @@ h2 {
 }
 
 #submit:hover {
-    background-color: #601c94;
+    background-color: #4640A6;
 }
 
 @media screen and (max-width: 1200px) {
